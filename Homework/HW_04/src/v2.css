@@ -1,0 +1,42 @@
+/* Додаткові стилі функцій версії 2.0. */
+.favorite-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: #c6cad6;
+  white-space: nowrap;
+}
+
+.favorite-filter input {
+  flex: 0;
+  accent-color: var(--violet);
+}
+
+.profile-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.secondary {
+  padding: 10px 14px;
+  border: 1px solid #ef4444;
+  border-radius: 7px;
+  color: #fca5a5;
+  background: transparent;
+  cursor: pointer;
+}
+
+.secondary:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .favorite-filter { padding: 12px 14px; }
+  .profile-heading { align-items: flex-start; flex-direction: column; }
+}
